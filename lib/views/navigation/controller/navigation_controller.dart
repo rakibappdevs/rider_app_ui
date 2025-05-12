@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:ibanking/views/order_request/screen/order_request_screen.dart';
 
 import '../../cart/screen/cart_screen.dart';
 import '../../category/screen/category_screen.dart';
@@ -10,7 +11,7 @@ class NavigationController extends GetxController {
 
   List<Widget> bodyPages = [
     DashboardScreen(),
-    CategoryScreen(),
+    OrderRequestScreen(),
     CartScreen(),
     Container(color: Colors.blue),
   ];

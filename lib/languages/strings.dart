@@ -48,6 +48,12 @@ class Strings {
   static const String thisWeek = 'This Week';
   static const String today = "Today";
   static const String payNow = "Pay Now";
+  static const String ignore = "Ignore";
+  static const String restaurantIs = "Restaurant is";
+  static const String accept = "Accept";
+  static const String viewMap = "View map";
+  static const String deliverTo = "Deliver to";
+  static const String orderRequest = "Order Request";
   static const String cashInYourHand = "Cash In Your Hand";
 
 

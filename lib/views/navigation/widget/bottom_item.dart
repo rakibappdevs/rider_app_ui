@@ -28,17 +28,17 @@ class BottomItem extends StatelessWidget {
                     ? CustomColor.primary
                     : CustomColor.disableColor,
               ),
-              TextWidget(
-                label,
-                style: TextStyle(
-                  fontSize: Dimensions.labelSmall * 0.9,
-                  fontWeight: FontWeight.w500,
-                ),
-                color: controller.selectedIndex.value == index
-                    ? CustomColor.primary
-                    : CustomColor.disableColor,
-              ),
-              Sizes.height.v5,
+              // TextWidget(
+              //   label,
+              //   style: TextStyle(
+              //     fontSize: Dimensions.labelSmall * 0.9,
+              //     fontWeight: FontWeight.w500,
+              //   ),
+              //   color: controller.selectedIndex.value == index
+              //       ? CustomColor.primary
+              //       : CustomColor.disableColor,
+              // ),
+              // Sizes.height.v5,
             ],
           ),
         ),
