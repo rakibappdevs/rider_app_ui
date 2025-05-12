@@ -49,6 +49,7 @@ class Strings {
   static const String today = "Today";
   static const String payNow = "Pay Now";
   static const String ignore = "Ignore";
+  static const String Profile = "Profile";
   static const String ord = "Order # ";
   static const String myOrder = "My Order";
   static const String restaurantIs = "Restaurant is";
