@@ -5,7 +5,7 @@ class Strings {
   static const String from = "appLFrom";
   static const String fromGallery = "appLFromGallery";
   static const String fromCamera = "appLFromCamera";
-  static const String home = "appLHome";
+  static const String home = "Home";
   static const String youCanResend = "appLYouCanResend";
   static const String resend = "appLResend";
   static const String error = "appLError";
@@ -29,4 +29,26 @@ class Strings {
   static const String coreComponents = 'Core Components';
   static const String peripheralsOthers = 'Peripherals & Others';
   static const String cart = 'Cart';
+
+
+  ///
+  static const String welcomeBack = 'STACK FOOD';
+  static const String balance = 'Balance';
+  static const String earnings = 'Earnings';
+  static const String setting = 'Settings';
+  static const String orders = 'Orders';
+  static const String totalEarnings = 'Total Earnings';
+  static const String todayOrder = "Today's Orders";
+  static const String totalOrders = 'Total Orders';
+  static const String thisWeekOrder = 'This Week Order';
+  static const String ThisMonth = 'This Month';
+  static const String activeDeliveries = 'Active Deliveries';
+  static const String orderSummary = 'Order Summary';
+
+  static const String thisWeek = 'This Week';
+  static const String today = "Today";
+  static const String payNow = "Pay Now";
+  static const String cashInYourHand = "Cash In Your Hand";
+
+
 }

@@ -10,11 +10,11 @@ class NavigationMobileScreen extends GetView<NavigationController> {
       backgroundColor: Colors.green,
       body: Obx(() => controller.bodyPages[controller.selectedIndex.value]),
       bottomNavigationBar: NavigationBarWidget(),
-      floatingActionButton: Obx(() => Visibility(
-            visible: controller.selectedIndex.value == 0,
-            child: ActionButton(),
-          )),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+      // floatingActionButton: Obx(() => Visibility(
+      //       visible: controller.selectedIndex.value == 0,
+      //       child: ActionButton(),
+      //     )),
+      // floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
     );
   }
 }

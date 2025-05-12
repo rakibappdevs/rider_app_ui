@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 import 'model.dart';
 
@@ -18,7 +17,7 @@ final ThemeData lightThemeData = ThemeData.light().copyWith(
   scaffoldBackgroundColor: CustomColor.background,
   appBarTheme: AppBarTheme(systemOverlayStyle: SystemUiOverlayStyle.light),
   textTheme: ThemeData.light().textTheme.apply(
-        fontFamily: GoogleFonts.montserrat().fontFamily,
+        // fontFamily: GoogleFonts.montserrat().fontFamily,
       ),
   elevatedButtonTheme: ElevatedButtonThemeData(
     style: ElevatedButton.styleFrom(
@@ -38,7 +37,7 @@ final ThemeData darkThemeData = ThemeData.dark().copyWith(
   scaffoldBackgroundColor: CustomColor.backgroundDark,
   brightness: Brightness.dark,
   textTheme: ThemeData.dark().textTheme.apply(
-        fontFamily: GoogleFonts.inter().fontFamily,
+        // fontFamily: GoogleFonts.inter().fontFamily,
       ),
   elevatedButtonTheme: ElevatedButtonThemeData(
     style: ElevatedButton.styleFrom(

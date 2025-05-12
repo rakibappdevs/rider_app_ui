@@ -2,8 +2,8 @@ part of 'token.dart';
 
 class CustomColor {
   //Light Color
-  static Color primary = HexColor('#007bff');
-  static Color secondary = HexColor('#19173D');
+  // static Color primary = HexColor('#f86c08');
+  // static Color secondary = HexColor('#19173D');
   static Color tertiary = HexColor('#F5F5F5');
   static Color background = HexColor('#F7F8F8');
   static Color typography = HexColor('#1D1D1D');
@@ -32,6 +32,8 @@ class CustomColor {
   // Others
   static const Color whiteColor = Color(0xFFffffff);
   static const Color blackColor = Color(0xFF000000);
+  static const Color primary = Color(0xFFff6c00);
+  static const Color secondary = Color(0xFF354157);
   static const Color primaryColorShadeZero = Color(0xFFFFF2F0);
 
   /// SHADE TOKENS (Done)

@@ -4,6 +4,11 @@ import 'package:get/get.dart';
 class DashboardController extends GetxController {
   final carouselController = CarouselSliderController();
 
+  RxBool isOnline = true.obs;
+
+  void toggle() {
+    isOnline.value = !isOnline.value;
+  }
   final RxInt currentBannerIndex = 0.obs;
 
   final List<String> bannerList = [
