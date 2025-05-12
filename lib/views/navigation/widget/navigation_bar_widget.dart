@@ -45,7 +45,7 @@ class NavigationBarWidget extends StatelessWidget {
             child: Padding(
               padding: EdgeInsets.only(top: Dimensions.paddingSize * 0.2),
               child: BottomItem(
-                icon: Icons.monetization_on,
+                icon: Icons.ac_unit,
                 label: Strings.earnings,
                 index: 2,
               ),
@@ -58,7 +58,7 @@ class NavigationBarWidget extends StatelessWidget {
                 left: Dimensions.paddingSize * 0.5,
               ),
               child: BottomItem(
-                icon: Icons.settings,
+                icon: Icons.person,
                 label: Strings.setting,
                 index: 3,
               ),
