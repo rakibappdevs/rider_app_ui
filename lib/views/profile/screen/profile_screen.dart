@@ -1,6 +1,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:ibanking/routes/routes.dart';
 import '../../../base/utils/basic_import.dart';
 import '../controller/profile_controller.dart';
 part 'profile_tablet_screen.dart';

@@ -61,9 +61,12 @@ class CustomContainerBox extends GetView<ProfileController> {
               icon: Icons.mark_chat_read,
             ),
             Sizes.height.v10,
-            CardTypeBox(
-              title: Strings.myAccount,
-              icon: Icons.home,
+            GestureDetector(
+              onTap: () => Get.toNamed(Routes.my_accountScreen),
+              child: CardTypeBox(
+                title: Strings.myAccount,
+                icon: Icons.home,
+              ),
             ),
             Sizes.height.v10,
             GestureDetector(
@@ -166,6 +169,7 @@ _bottomLogOutDialog(context) {
     },
   );
 }
+
 _deleteAccountDialog(context) {
   return showModalBottomSheet(
     context: context,

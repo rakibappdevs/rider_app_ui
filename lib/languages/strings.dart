@@ -15,6 +15,7 @@ class Strings {
   static const String noDataFound = "appLNoDataFound";
   static const String skip = "appLSkip";
   static const String buyNow = "Buy Now";
+  static const String pending = "Pending";
   static const String featuredProducts = 'Featured Products';
   static const String enableYourBusiness =
       'Enable your business to respond & anticipate the needs';
@@ -40,6 +41,8 @@ class Strings {
   static const String totalEarnings = 'Total Earnings';
   static const String todayOrder = "Today's Orders";
   static const String totalOrders = 'Total Orders';
+  static const String totalWithdraw = 'Total Withdraw';
+  static const String cashInHand = 'Cash In Hand';
   static const String thisWeekOrder = 'This Week Order';
   static const String ThisMonth = 'This Month';
   static const String activeDeliveries = 'Active Deliveries';
@@ -48,7 +51,9 @@ class Strings {
   static const String thisWeek = 'This Week';
   static const String today = "Today";
   static const String payNow = "Pay Now";
+  static const String payableAmount = "Payable Amount";
   static const String ignore = "Ignore";
+  static const String adjustPayment = "Adjust Payments";
   static const String Profile = "Profile";
   static const String ord = "Order # ";
   static const String myOrder = "My Order";
