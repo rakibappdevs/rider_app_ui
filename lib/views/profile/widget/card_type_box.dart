@@ -39,11 +39,11 @@ class CardTypeBox extends StatelessWidget {
         title: TextWidget(title),
         trailing: showSwitch == true
             ? Switch(
-                activeColor: CustomColor.whiteColor,
-                activeTrackColor: CustomColor.primary,
-                value: value,
-                onChanged: onChanged,
-              )
+          activeColor: CustomColor.whiteColor,
+          activeTrackColor: CustomColor.primary,
+          value: value,
+          onChanged: onChanged,
+        )
             : null,
       ),
     );

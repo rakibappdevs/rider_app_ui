@@ -24,25 +24,33 @@ class CustomContainerBox extends GetView<ProfileController> {
             Sizes.height.v20,
             DayBoxWidget(),
             Sizes.height.v25,
-            CardTypeBox(
-              title: Strings.darkMode,
-              onChanged: (value) {},
-              icon: Icons.dark_mode,
-              value: false,
+            Obx(
+              () => CardTypeBox(
+                  title: Strings.darkMode,
+                  icon: Icons.dark_mode,
+                  value: controller.isDarkMode.value,
+                  showSwitch: true,
+                  onChanged: (value) => controller.isDarkMode.value = value),
             ),
             Sizes.height.v10,
-            CardTypeBox(
-              title: Strings.systemNotification,
-              onChanged: (value) {},
-              icon: Icons.notifications,
-              value: true,
+            Obx(
+              () => CardTypeBox(
+                title: Strings.systemNotification,
+                onChanged: (value) =>
+                    controller.systemNotificationEnabled.value = value,
+                icon: Icons.notifications,
+                value: controller.systemNotificationEnabled.value,
+              ),
             ),
             Sizes.height.v10,
-            CardTypeBox(
-              title: Strings.backgroundNotification,
-              onChanged: (value) {},
-              icon: Icons.notifications_on_sharp,
-              value: false,
+            Obx(
+              () => CardTypeBox(
+                title: Strings.backgroundNotification,
+                onChanged: (value) =>
+                    controller.backgroundNotificationEnabled.value = value,
+                icon: Icons.notifications_on_sharp,
+                value: controller.backgroundNotificationEnabled.value,
+              ),
             ),
             Sizes.height.v10,
             CardTypeBox(
