@@ -64,6 +64,19 @@ class NavigationBarWidget extends StatelessWidget {
               ),
             ),
           ),
+          Expanded(
+            child: Padding(
+              padding: EdgeInsets.only(
+                top: Dimensions.paddingSize * 0.2,
+                left: Dimensions.paddingSize * 0.5,
+              ),
+              child: BottomItem(
+                icon: Icons.outbox_rounded,
+                label: Strings.orders,
+                index: 4,
+              ),
+            ),
+          ),
         ],
       ),
     );

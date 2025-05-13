@@ -8,6 +8,7 @@ import '../bindings/cart_binding.dart';
 import '../bindings/category_binding.dart';
 import '../bindings/my_account_binding.dart';
 import '../bindings/my_order_binding.dart';
+import '../bindings/order_details_binding.dart';
 import '../bindings/order_request_binding.dart';
 import '../bindings/pc_builder_binding.dart';
 import '../bindings/profile_binding.dart';
@@ -16,6 +17,7 @@ import '../views/category/screen/category_screen.dart';
 import '../views/my_account/screen/my_account_screen.dart';
 import '../views/my_order/screen/my_order_screen.dart';
 import '../views/onboard/screen/onboard_screen.dart';
+import '../views/order_details/screen/order_details_screen.dart';
 import '../views/order_request/screen/order_request_screen.dart';
 import '../views/pc_builder/screen/pc_builder_screen.dart';
 import '../views/profile/screen/profile_screen.dart';
@@ -39,4 +41,5 @@ class Routes {
   static const String my_orderScreen = '/my_orderScreen';
   static const String profileScreen = '/profileScreen';
   static const String my_accountScreen = '/my_accountScreen';
+  static const String order_detailsScreen = '/order_detailsScreen';
 }

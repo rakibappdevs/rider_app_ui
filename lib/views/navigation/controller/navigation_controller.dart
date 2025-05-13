@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:ibanking/views/my_order/screen/my_order_screen.dart';
+import 'package:ibanking/views/order_details/screen/order_details_screen.dart';
 import 'package:ibanking/views/order_request/screen/order_request_screen.dart';
 import 'package:ibanking/views/profile/screen/profile_screen.dart';
 
@@ -15,7 +16,8 @@ class NavigationController extends GetxController {
     DashboardScreen(),
     OrderRequestScreen(),
     MyOrderScreen(),
-    ProfileScreen()
+    ProfileScreen(),
+    OrderDetailsScreen()
   ];
 
   void changePage(int index) {

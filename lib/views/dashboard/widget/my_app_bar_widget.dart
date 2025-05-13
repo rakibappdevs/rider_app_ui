@@ -9,6 +9,7 @@ class MyAppBarWidget extends GetView<DashboardController>
     return Padding(
       padding: EdgeInsets.only(top: Dimensions.verticalSize * 0.4),
       child: AppBar(
+        scrolledUnderElevation: 0,
         backgroundColor: CustomColor.whiteColor,
         shadowColor: CustomColor.blackColor,
         systemOverlayStyle: SystemUiOverlayStyle(

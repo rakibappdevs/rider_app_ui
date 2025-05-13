@@ -53,12 +53,17 @@ class Strings {
   static const String payNow = "Pay Now";
   static const String payableAmount = "Payable Amount";
   static const String ignore = "Ignore";
+  static const String itemInfo = "Item Info";
   static const String adjustPayment = "Adjust Payments";
   static const String Profile = "Profile";
   static const String ord = "Order # ";
+  static const String activeOrder = "Active Order";
   static const String myOrder = "My Order";
   static const String restaurantIs = "Restaurant is";
   static const String accept = "Accept";
+  static const String customerContactDetails = "Customer Contact Details";
+  static const String orderIsAccepted = "Order Is Accepted";
+  static const String foodNeedToDeliverWithing = "Food Need To Deliver Withing";
   static const String viewMap = "View map";
   static const String deliverTo = "Deliver to";
   static const String orderRequest = "Order Request";
@@ -73,6 +78,7 @@ class Strings {
   static const String cancel = "Cancel";
   static const String deleteAccount = "Delete Account";
   static const String logOut = "Log Out";
+  static const String quantity = "Quantity";
   static const String delete = "Delete";
   static const String myAccount = "My Account";
   static const String logOutAlert = "Log Out";

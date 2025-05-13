@@ -3,6 +3,12 @@ part of '../routes/routes.dart';
 class RoutePageList {
   static var list = [
     GetPage(
+      name: Routes.order_detailsScreen,
+      page: () => const OrderDetailsScreen(),
+      binding: OrderDetailsBinding(),
+    ),
+    
+    GetPage(
       name: Routes.my_accountScreen,
       page: () => const MyAccountScreen(),
       binding: MyAccountBinding(),
