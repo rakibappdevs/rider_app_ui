@@ -3,18 +3,22 @@ part of '../screen/profile_screen.dart';
 class CardTypeBox extends StatelessWidget {
   final IconData icon;
   final String title;
-  final bool? showSwitch;
-  final bool value;
-  final ValueChanged<bool> onChanged;
+  final bool showSwitch;
+  final bool? value;
+  final ValueChanged<bool>? onChanged;
 
   const CardTypeBox({
     Key? key,
     required this.icon,
     required this.title,
-    this.showSwitch = true,
-    required this.value,
-    required this.onChanged,
-  }) : super(key: key);
+    this.showSwitch = false,
+    this.value,
+    this.onChanged,
+  })  : assert(
+          showSwitch == false || (value != null && onChanged != null),
+          'If showSwitch is true, value and onChanged must be provided.',
+        ),
+        super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -37,13 +41,13 @@ class CardTypeBox extends StatelessWidget {
       child: ListTile(
         leading: Icon(icon),
         title: TextWidget(title),
-        trailing: showSwitch == true
+        trailing: showSwitch
             ? Switch(
-          activeColor: CustomColor.whiteColor,
-          activeTrackColor: CustomColor.primary,
-          value: value,
-          onChanged: onChanged,
-        )
+                activeColor: CustomColor.whiteColor,
+                activeTrackColor: CustomColor.primary,
+                value: value!,
+                onChanged: onChanged!,
+              )
             : null,
       ),
     );

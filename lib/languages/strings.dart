@@ -65,6 +65,15 @@ class Strings {
   static const String conversation = "Conversion";
   static const String backgroundNotification = "Background Notification";
   static const String language = "language";
+  static const String cancel = "Cancel";
+  static const String deleteAccount = "Delete Account";
+  static const String logOut = "Log Out";
+  static const String delete = "Delete";
+  static const String myAccount = "My Account";
+  static const String logOutAlert = "Log Out";
+  static const String accountDeleteAlert = "Delete Account";
+  static const String logOutAlertNote = "Are you sure you want to log out?";
+  static const String accountDeleteAlertNote = "Are you sure you want to delete your account?";
   static const String morning = "Morning ( 04:00 AM - 11:59 AM";
 
 
