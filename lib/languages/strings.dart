@@ -58,6 +58,15 @@ class Strings {
   static const String deliverTo = "Deliver to";
   static const String orderRequest = "Order Request";
   static const String cashInYourHand = "Cash In Your Hand";
+  static const String shift = "Shift: ";
+  static const String sinceJoining = "Since Joining";
+  static const String darkMode = "Dark Mode";
+  static const String systemNotification = "System Notification";
+  static const String conversation = "Conversion";
+  static const String backgroundNotification = "Background Notification";
+  static const String language = "language";
+  static const String morning = "Morning ( 04:00 AM - 11:59 AM";
+
 
 
 }
