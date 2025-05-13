@@ -18,6 +18,7 @@ class InfoItemsWidget extends GetView<OrderDetailsController> {
             fontWeight: FontWeight.bold,
           ),
           ListTile(
+
             contentPadding: EdgeInsets.zero,
             leading: Container(
               decoration: BoxDecoration(
