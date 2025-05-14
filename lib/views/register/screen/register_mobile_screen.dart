@@ -6,6 +6,14 @@ class RegisterMobileScreen extends GetView<RegisterController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        scrolledUnderElevation: 0,
+        automaticallyImplyLeading: true,
+        title: TextWidget(
+          'Delivery Man Register',
+          fontWeight: FontWeight.w700,
+        ),
+      ),
       body: _bodyWidget(context),
     );
   }

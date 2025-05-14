@@ -27,6 +27,9 @@ class RememberWidget extends GetView<LoginController> {
           ],
         ),
         TextWidget(
+          onTap: () {
+            Get.toNamed(Routes.forgot_passwordScreen);
+          },
           Strings.forgotPassword,
           fontWeight: FontWeight.w500,
           fontSize: Dimensions.titleSmall,

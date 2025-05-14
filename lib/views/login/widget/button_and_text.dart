@@ -10,7 +10,13 @@ class ButtonAndText extends GetView<LoginController> {
         Sizes.height.v40,
         PrimaryButton(
           title: Strings.signIn,
-          onPressed: () {},
+          onPressed: () {
+            if (controller.validateForm()) {
+              Get.offAllNamed(Routes.navigation);
+            } else {
+              print('Form is not valid');
+            }
+          },
         ),
         Row(
           mainAxisAlignment: mainCenter,

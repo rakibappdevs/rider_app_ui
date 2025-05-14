@@ -1,6 +1,7 @@
 import 'dart:ffi';
 import 'dart:io';
 
+import 'package:country_picker/country_picker.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 import 'package:ibanking/base/utils/basic_import.dart';
@@ -14,7 +15,16 @@ class RegisterController extends GetxController {
   final emailController = TextEditingController();
   final passwordController = TextEditingController();
   final confirmPasswordController = TextEditingController();
+  RxString selectedCountryFlag = ''.obs;
+  RxString selectedCountryCode = ''.obs;
 
+  @override
+  void onInit() {
+    super.onInit();
+    final defaultCountry = Country.parse('BD');
+    selectedCountryFlag.value = defaultCountry.flagEmoji;
+    selectedCountryCode.value = defaultCountry.phoneCode;
+  }
 
   Rx<XFile?> userSelectedImage = Rx<XFile?>(null);
 

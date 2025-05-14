@@ -1,8 +1,10 @@
 import 'dart:io';
+import 'package:country_picker/country_picker.dart';
 import 'package:dotted_border/dotted_border.dart';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:ibanking/routes/routes.dart';
 import 'package:image_picker/image_picker.dart';
 import '../../../base/utils/basic_import.dart';
 import '../controller/register_controller.dart';

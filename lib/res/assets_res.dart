@@ -8,5 +8,4 @@ class AssetsRes {
 
   static const String PROJECT_NAME = 'ibanking';
   static const String PROJECT_VERSION = '1.0.0+1';
-  static const String LOGO = 'assets/icons/logo.png';
 }

@@ -3,6 +3,12 @@ part of '../routes/routes.dart';
 class RoutePageList {
   static var list = [
     GetPage(
+      name: Routes.ragistrationScreen,
+      page: () => const RagistrationScreen(),
+      binding: RagistrationBinding(),
+    ),
+    
+    GetPage(
       name: Routes.otp_verificationScreen,
       page: () => const OtpVerificationScreen(),
       binding: OtpVerificationBinding(),
