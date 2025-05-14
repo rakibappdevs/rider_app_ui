@@ -82,7 +82,7 @@ class PrimaryInputWidget extends StatefulWidget {
     this.borderStyle = BorderStyle.outline,
     this.fillColor,
     this.validatorFunction,
-    this.showBorderSide = true,
+    this.showBorderSide = false,
     this.customShapeDecoration,
     this.onChanged,
     this.suffixIconPadding,
@@ -121,7 +121,7 @@ class _PrimaryInputWidgetState extends State<PrimaryInputWidget> {
     return InputDecoration(
       hintText: widget.skipEnterText
           ? widget.hintText
-          : "${Strings.enter} ${widget.hintText}",
+          : "${''} ${widget.hintText}",
       hintStyle: CustomStyle.bodyMedium.copyWith(
         fontWeight: FontWeight.w400,
         color: Color(0xffDDDDDD),
@@ -309,7 +309,7 @@ class _PrimaryInputWidgetState extends State<PrimaryInputWidget> {
   }
 
   _setFillColor(BuildContext context) {
-    return widget.fillColor ?? Theme.of(context).colorScheme.tertiary;
+    return widget.fillColor ?? CustomColor.whiteColor;
   }
 
   _setFilled() {

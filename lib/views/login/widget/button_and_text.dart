@@ -20,6 +20,9 @@ class ButtonAndText extends GetView<LoginController> {
               color: Colors.grey.withAlpha(99),
             ),
             TextWidget(
+              onTap: () {
+                Get.toNamed(Routes.registerScreen);
+              },
               padding: EdgeInsets.symmetric(vertical: Dimensions.verticalSize),
               Strings.deliveryMan,
               fontWeight: FontWeight.bold,

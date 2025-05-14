@@ -1,6 +1,6 @@
 class Strings {
   static String appName = "";
-  static const String pleaseFillOutTheField = "appLPleaseFillOutTheField";
+  static const String pleaseFillOutTheField = "Please Fill Out The Field";
   static const String enter = "Enter";
   static const String from = "appLFrom";
   static const String fromGallery = "appLFromGallery";
@@ -8,7 +8,7 @@ class Strings {
   static const String home = "Home";
   static const String youCanResend = "appLYouCanResend";
   static const String resend = "appLResend";
-  static const String error = "appLError";
+  static const String error = "Error";
   static const String virtualCard = "appLVirtualCard";
   static const String history = "appLHistory";
   static const String beneficiary = "appLBeneficiary";
@@ -18,6 +18,7 @@ class Strings {
   static const String pending = "Pending";
   static const String signIn = "Sign In";
   static const String deliveryMan = "  Delivery man";
+  static const String upload = "Upload deliveryman photo";
   static const String joinAsA = "join as a";
   static const String rememberMe = "Remember me";
   static const String forgotPassword = "Forgot Password";
@@ -36,7 +37,6 @@ class Strings {
   static const String peripheralsOthers = 'Peripherals & Others';
   static const String cart = 'Cart';
 
-
   ///
   static const String welcomeBack = 'STACK FOOD';
   static const String balance = 'Balance';
@@ -54,9 +54,14 @@ class Strings {
   static const String orderSummary = 'Order Summary';
 
   static const String thisWeek = 'This Week';
+  static const String firstName = 'First Name';
+  static const String lastName = 'Last Name';
+  static const String phone = 'Phone';
+  static const String email = 'E-mail';
   static const String today = "Today";
   static const String payNow = "Pay Now";
   static const String password = "Password";
+  static const String confirmPassword = "Confirm Password";
   static const String paymentMethod = "Payment Method";
   static const String unpaid = "Unpaid";
   static const String cash = "Cash";
@@ -97,11 +102,10 @@ class Strings {
   static const String logOutAlert = "Log Out";
   static const String accountDeleteAlert = "Delete Account";
   static const String logOutAlertNote = "Are you sure you want to log out?";
-  static const String accountDeleteAlertNote = "Are you sure you want to delete your account?";
+  static const String accountDeleteAlertNote =
+      "Are you sure you want to delete your account?";
   static const String morning = "Morning ( 04:00 AM - 11:59 AM";
   static const String foodIsWaitingForCook = "Food is waiting for cook";
-  static const String whenItsReadyCookingYouWillBeNotified = "When its ready cooking, you will be notified";
-
-
-
+  static const String whenItsReadyCookingYouWillBeNotified =
+      "When its ready cooking, you will be notified";
 }

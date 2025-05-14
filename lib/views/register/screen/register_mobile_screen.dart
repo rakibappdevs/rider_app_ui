@@ -6,15 +6,24 @@ class RegisterMobileScreen extends GetView<RegisterController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const CustomAppBar('Register Mobile Screen'),
       body: _bodyWidget(context),
     );
   }
 
   _bodyWidget(BuildContext context) {
-    return const SafeArea(
-      child: Column(
-        children: [],
+    return SafeArea(
+      child: Padding(
+        padding:
+            EdgeInsets.symmetric(horizontal: Dimensions.defaultHorizontalSize),
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              Sizes.height.v40,
+              UploadImageWidget(),
+              RegisterFieldWidget()
+            ],
+          ),
+        ),
       ),
     );
   }
