@@ -7,11 +7,6 @@ class SplashController extends GetxController {
   @override
   void onReady() {
     super.onReady();
-
-    LocalStorage.isLoggedIn
-        ? Get.offAndToNamed(Routes.navigation)
-        : LocalStorage.onboardSave
-            ? Get.offAndToNamed(Routes.navigation)
-            : Get.offAndToNamed(Routes.onboardScreen);
+    Get.offAndToNamed(Routes.loginScreen);
   }
 }

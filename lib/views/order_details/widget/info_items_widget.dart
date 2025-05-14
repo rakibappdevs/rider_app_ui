@@ -9,7 +9,8 @@ class InfoItemsWidget extends GetView<OrderDetailsController> {
       color: CustomColor.background,
       padding: EdgeInsets.symmetric(
           horizontal: Dimensions.defaultHorizontalSize * 0.8,
-          vertical: Dimensions.verticalSize * 0.25),      child: Column(
+          vertical: Dimensions.verticalSize * 0.25),
+      child: Column(
         crossAxisAlignment: crossStart,
         children: [
           TextWidget(
@@ -18,7 +19,6 @@ class InfoItemsWidget extends GetView<OrderDetailsController> {
             fontWeight: FontWeight.bold,
           ),
           ListTile(
-
             contentPadding: EdgeInsets.zero,
             leading: Container(
               decoration: BoxDecoration(

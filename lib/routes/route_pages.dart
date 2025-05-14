@@ -3,6 +3,30 @@ part of '../routes/routes.dart';
 class RoutePageList {
   static var list = [
     GetPage(
+      name: Routes.otp_verificationScreen,
+      page: () => const OtpVerificationScreen(),
+      binding: OtpVerificationBinding(),
+    ),
+    
+    GetPage(
+      name: Routes.forgot_passwordScreen,
+      page: () => const ForgotPasswordScreen(),
+      binding: ForgotPasswordBinding(),
+    ),
+    
+    GetPage(
+      name: Routes.registerScreen,
+      page: () => const RegisterScreen(),
+      binding: RegisterBinding(),
+    ),
+    
+    GetPage(
+      name: Routes.loginScreen,
+      page: () => const LoginScreen(),
+      binding: LoginBinding(),
+    ),
+    
+    GetPage(
       name: Routes.order_detailsScreen,
       page: () => const OrderDetailsScreen(),
       binding: OrderDetailsBinding(),

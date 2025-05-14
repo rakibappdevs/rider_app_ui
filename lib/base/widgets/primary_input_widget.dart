@@ -97,14 +97,12 @@ class _PrimaryInputWidgetState extends State<PrimaryInputWidget> {
   bool isVisibility = true;
   @override
   Widget build(BuildContext context) {
-    return Obx(
-      () => widget.alignment != null
-          ? Align(
-              alignment: widget.alignment ?? Alignment.center,
-              child: _buildTextFormFieldWidget(context),
-            )
-          : _buildTextFormFieldWidget(context),
-    );
+    return  widget.alignment != null
+        ? Align(
+      alignment: widget.alignment ?? Alignment.center,
+      child: _buildTextFormFieldWidget(context),
+    )
+        : _buildTextFormFieldWidget(context);
   }
 
   @override

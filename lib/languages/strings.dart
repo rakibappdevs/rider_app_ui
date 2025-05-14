@@ -1,7 +1,7 @@
 class Strings {
   static String appName = "";
   static const String pleaseFillOutTheField = "appLPleaseFillOutTheField";
-  static const String enter = "appLEnter";
+  static const String enter = "Enter";
   static const String from = "appLFrom";
   static const String fromGallery = "appLFromGallery";
   static const String fromCamera = "appLFromCamera";
@@ -16,6 +16,11 @@ class Strings {
   static const String skip = "appLSkip";
   static const String buyNow = "Buy Now";
   static const String pending = "Pending";
+  static const String signIn = "Sign In";
+  static const String deliveryMan = "  Delivery man";
+  static const String joinAsA = "join as a";
+  static const String rememberMe = "Remember me";
+  static const String forgotPassword = "Forgot Password";
   static const String featuredProducts = 'Featured Products';
   static const String enableYourBusiness =
       'Enable your business to respond & anticipate the needs';
@@ -51,6 +56,10 @@ class Strings {
   static const String thisWeek = 'This Week';
   static const String today = "Today";
   static const String payNow = "Pay Now";
+  static const String password = "Password";
+  static const String paymentMethod = "Payment Method";
+  static const String unpaid = "Unpaid";
+  static const String cash = "Cash";
   static const String payableAmount = "Payable Amount";
   static const String ignore = "Ignore";
   static const String itemInfo = "Item Info";
@@ -69,8 +78,12 @@ class Strings {
   static const String orderRequest = "Order Request";
   static const String cashInYourHand = "Cash In Your Hand";
   static const String shift = "Shift: ";
+  static const String SignIn = "SIGN IN";
+  static const String subtotal = "Subtotal";
+  static const String deliveryManTips = " Deliveryman Tips";
   static const String sinceJoining = "Since Joining";
   static const String darkMode = "Dark Mode";
+  static const String totalAmount = "Total Amount";
   static const String systemNotification = "System Notification";
   static const String conversation = "Conversion";
   static const String backgroundNotification = "Background Notification";
@@ -86,6 +99,8 @@ class Strings {
   static const String logOutAlertNote = "Are you sure you want to log out?";
   static const String accountDeleteAlertNote = "Are you sure you want to delete your account?";
   static const String morning = "Morning ( 04:00 AM - 11:59 AM";
+  static const String foodIsWaitingForCook = "Food is waiting for cook";
+  static const String whenItsReadyCookingYouWillBeNotified = "When its ready cooking, you will be notified";
 
 
 
