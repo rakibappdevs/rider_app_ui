@@ -33,11 +33,14 @@ class RegisterController extends GetxController {
 
   final ImagePicker _picker = ImagePicker();
 
-  Future<void> selectYourImage() async {
-    final XFile? image = await _picker.pickImage(source: ImageSource.camera);
+  Future<void> selectYourImage(imageSource) async {
+    final XFile? image = await _picker.pickImage(source: imageSource);
     if (image != null) {
       userSelectedImage.value = image;
+      Get.back();
+
     } else {
+      Get.back();
       return CustomSnackBar.error('You have been not selected Image');
     }
     // update();

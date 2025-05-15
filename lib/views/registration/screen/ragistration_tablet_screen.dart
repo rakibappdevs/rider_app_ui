@@ -1,4 +1,4 @@
-part of 'ragistration_screen.dart';
+part of 'registration_screen.dart';
 
 class RagistrationTabletScreen extends GetView<RegistrationController> {
   const RagistrationTabletScreen({super.key});

@@ -9,31 +9,32 @@ class RegistrationController extends GetxController {
   RxString passport = Strings.passport.obs;
   RxString selectedDate = Strings.selectDate.obs;
 
-  final List<Map<String, dynamic>> items = [
-    // {'id': 1, 'name': 'Apple', 'color': 'Red'},
-    // {'id': 2, 'name': 'Banana', 'color': 'Yellow'},
-    // {'id': 3, 'name': 'Cherry', 'color': 'Red'},
-  ];
+  final List<Map<String, dynamic>> items = [];
 
   final Rx<XFile?> selectedIdentityImage = Rx<XFile?>(null);
   ImagePicker _picker = ImagePicker();
 
-  Future<void> uploadImage() async {
-    final image = await _picker.pickImage(source: ImageSource.camera);
+  Future<void> uploadImage(ImageSource sources) async {
+    final image = await _picker.pickImage(source: sources);
     if (image != null) {
       selectedIdentityImage.value = image;
+      Get.back();
     } else {
+      Get.back();
       return CustomSnackBar.error('You have been not pick image');
     }
   }
 
   final Rx<XFile?> selectedLicenseImg = Rx<XFile?>(null);
 
-  Future<void> uploadLicenseImg() async {
-    final licenseImg = await _picker.pickImage(source: ImageSource.camera);
+  Future<void> uploadLicenseImg(ImageSource sources) async {
+    final licenseImg = await _picker.pickImage(source: sources);
     if (licenseImg != null) {
       selectedLicenseImg.value = licenseImg;
+      Get.back();
     } else {
+      Get.back();
+
       return CustomSnackBar.error('You have been not pick image');
     }
   }

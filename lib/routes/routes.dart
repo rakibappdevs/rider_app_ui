@@ -2,7 +2,7 @@ import 'package:get/get.dart';
 import 'package:ibanking/bindings/navigation_binding.dart';
 import 'package:ibanking/bindings/splash_binding.dart';
 import 'package:ibanking/views/navigation/screen/navigation_screen.dart';
-import 'package:ibanking/views/registration/screen/ragistration_screen.dart';
+import 'package:ibanking/views/registration/screen/registration_screen.dart';
 import 'package:ibanking/views/splash/screen/splash_screen.dart';
 
 import '../bindings/cart_binding.dart';
