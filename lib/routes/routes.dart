@@ -8,6 +8,7 @@ import 'package:ibanking/views/splash/screen/splash_screen.dart';
 import '../bindings/cart_binding.dart';
 import '../bindings/category_binding.dart';
 import '../bindings/forgot_password_binding.dart';
+import '../bindings/incentive_binding.dart';
 import '../bindings/login_binding.dart';
 import '../bindings/my_account_binding.dart';
 import '../bindings/my_order_binding.dart';
@@ -21,6 +22,7 @@ import '../bindings/register_binding.dart';
 import '../views/cart/screen/cart_screen.dart';
 import '../views/category/screen/category_screen.dart';
 import '../views/forgot_password/screen/forgot_password_screen.dart';
+import '../views/incentive/screen/incentive_screen.dart';
 import '../views/login/screen/login_screen.dart';
 import '../views/my_account/screen/my_account_screen.dart';
 import '../views/my_order/screen/my_order_screen.dart';
@@ -57,4 +59,5 @@ class Routes {
   static const String forgot_passwordScreen = '/forgot_passwordScreen';
   static const String otp_verificationScreen = '/otp_verificationScreen';
   static const String ragistrationScreen = '/registrationScreen';
+  static const String incentiveScreen = '/incentiveScreen';
 }

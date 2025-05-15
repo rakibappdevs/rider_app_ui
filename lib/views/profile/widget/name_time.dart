@@ -7,9 +7,7 @@ class NameTime extends GetView<ProfileController> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        SizedBox(
-          height: MediaQuery.of(context).size.height * 0.085,
-        ),
+
         TextWidget('Jhon Doe', fontWeight: FontWeight.w500),
         Wrap(
           children: [

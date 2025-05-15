@@ -63,6 +63,8 @@ class MyOrderMobileScreen extends GetView<MyOrderController> {
                 Sizes.height.v5,
                 Expanded(
                   child: ListView.builder(
+                    physics: BouncingScrollPhysics(),
+
                     itemBuilder: (context, index) => DetailsCard(),
                   ),
                 )

@@ -22,7 +22,7 @@ class UserImageWidget extends GetView<ProfileController> {
                   width: Dimensions.radius * 10,
                   height: Dimensions.radius * 10,
                   placeholder: (context, url) =>
-                      CircularProgressIndicator(),
+                      CircularProgressIndicator(color: CustomColor.primary,),
                   errorWidget: (context, url, error) => Icon(Icons.error),
                 ),
               ),

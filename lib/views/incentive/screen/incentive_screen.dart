@@ -4,6 +4,8 @@ import '../../../base/utils/basic_import.dart';
 import '../controller/incentive_controller.dart';
 part 'incentive_tablet_screen.dart';
 part 'incentive_mobile_screen.dart';
+part '../widget/total_incentive_amount_box.dart';
+
 
 class IncentiveScreen extends GetView<IncentiveController> {
   const IncentiveScreen({Key? key}) : super(key: key);

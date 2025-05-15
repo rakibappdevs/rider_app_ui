@@ -49,6 +49,7 @@ class OrderDetailsMobileScreen extends GetView<OrderDetailsController> {
         ),
       ),
       body: ListView(
+        physics: BouncingScrollPhysics(),
         children: [
           Sizes.height.v10,
           Image.network(

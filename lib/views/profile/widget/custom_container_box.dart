@@ -6,6 +6,7 @@ class CustomContainerBox extends GetView<ProfileController> {
   @override
   Widget build(BuildContext context) {
     return Container(
+      padding: EdgeInsets.only(top: Dimensions.verticalSize * 2.4),
       width: double.maxFinite,
       height: MediaQuery.of(context).size.height * 0.8,
       decoration: BoxDecoration(
@@ -19,6 +20,7 @@ class CustomContainerBox extends GetView<ProfileController> {
         padding:
             EdgeInsets.symmetric(horizontal: Dimensions.defaultHorizontalSize),
         child: ListView(
+          physics: BouncingScrollPhysics(),
           children: [
             NameTime(),
             Sizes.height.v20,
@@ -66,6 +68,14 @@ class CustomContainerBox extends GetView<ProfileController> {
               child: CardTypeBox(
                 title: Strings.myAccount,
                 icon: Icons.home,
+              ),
+            ),
+            Sizes.height.v10,
+            GestureDetector(
+              onTap: () => Get.toNamed(Routes.incentiveScreen),
+              child: CardTypeBox(
+                title: "Incentive",
+                icon: Icons.calendar_view_day_rounded,
               ),
             ),
             Sizes.height.v10,

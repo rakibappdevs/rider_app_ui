@@ -94,6 +94,11 @@ class Strings {
   static const String SignIn = "SIGN IN";
   static const String subtotal = "Subtotal";
   static const String submit = "Submit";
+  static const String earning = "Earning";
+  static const String incentive = "Incentive";
+  static const String currentIncentiveOffers = "Current Incentive Offers";
+  static const String youHaveTotalIncentive = "You have total Incentive";
+  static const String Incentive = "Incentive";
   static const String deliveryManTips = " Deliveryman Tips";
   static const String sinceJoining = "Since Joining";
   static const String darkMode = "Dark Mode";
