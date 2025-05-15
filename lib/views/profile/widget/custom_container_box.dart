@@ -62,6 +62,15 @@ class CustomContainerBox extends GetView<ProfileController> {
               title: Strings.conversation,
               icon: Icons.mark_chat_read,
             ),
+
+            Sizes.height.v10,
+            GestureDetector(
+              onTap: () => Get.toNamed(Routes.edit_profileScreen),
+              child: CardTypeBox(
+                title: "Edit Profile",
+                icon: Icons.edit,
+              ),
+            ),
             Sizes.height.v10,
             GestureDetector(
               onTap: () => Get.toNamed(Routes.my_accountScreen),

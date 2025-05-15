@@ -211,12 +211,13 @@ class _PrimaryInputWidgetState extends State<PrimaryInputWidget> {
               children: [
                 TextWidget(
                   widget.label!,
-                  style: CustomStyle.labelSmall.copyWith(
-                    fontWeight: FontWeight.w400,
-                  ),
+                  fontWeight: FontWeight.w400,
+                  // style: CustomStyle.labelSmall.copyWith(
+                  //   fontWeight: FontWeight.w400,
+                  // ),
                   color: focusNode!.hasFocus
                       ? Color(0xfff1D1D1D)
-                      : Color(0xff949595),
+                      : Color(0xfff1D1D1D),
                 ),
                 if (widget.optionalText != '')
                   Row(
@@ -224,12 +225,12 @@ class _PrimaryInputWidgetState extends State<PrimaryInputWidget> {
                       Sizes.width.v5,
                       TextWidget(
                         widget.optionalText ?? '',
+
                         style: CustomStyle.labelSmall.copyWith(
+                          color: CustomColor.rejected,
                           fontWeight: FontWeight.w400,
                         ),
-                        color: focusNode!.hasFocus
-                            ? Color(0xfff1D1D1D)
-                            : Color(0xff949595),
+                        color: CustomColor.rejected,
                       ),
                     ],
                   ),
