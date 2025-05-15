@@ -10,7 +10,7 @@ class RegisterMobileScreen extends GetView<RegisterController> {
         scrolledUnderElevation: 0,
         automaticallyImplyLeading: true,
         title: TextWidget(
-          'Delivery Man Register',
+          Strings.deliveryManRegister,
           fontWeight: FontWeight.w700,
         ),
       ),

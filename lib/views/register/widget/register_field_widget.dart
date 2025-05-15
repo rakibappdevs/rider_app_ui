@@ -112,13 +112,15 @@ class RegisterFieldWidget extends GetView<RegisterController> {
           PrimaryButton(
             title: 'Next',
               onPressed: () {
-                if (controller.formKey.currentState!.validate()) {
-                  if (controller.userSelectedImage.value != null) {
-                    Get.toNamed(Routes.ragistrationScreen);
-                  } else {
-                    CustomSnackBar.error('Select a photo');
-                  }
-                }
+                Get.toNamed(Routes.ragistrationScreen);
+                //
+                // if (controller.formKey.currentState!.validate()) {
+                //   if (controller.userSelectedImage.value != null) {
+                //     Get.toNamed(Routes.ragistrationScreen);
+                //   } else {
+                //     CustomSnackBar.error('Select a photo');
+                //   }
+                // }
               }
 
           )

@@ -159,6 +159,9 @@ class ActiveOrderWidget extends GetView<DashboardController> {
               ),
               Center(
                   child: TextWidget(
+                onTap: () {
+                  Get.toNamed(Routes.order_detailsScreen);
+                },
                 padding: EdgeInsets.only(
                     top: Dimensions.verticalSize * 0.2,
                     bottom: Dimensions.verticalSize * 0.3),

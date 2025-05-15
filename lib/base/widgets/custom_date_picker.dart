@@ -95,8 +95,8 @@ class _CustomDatePickerState extends State<CustomDatePicker>
                 BoxDecoration(
                   border: Border.all(
                     color:
-                        isDatePickerOpened ? CustomColor.primary : Colors.grey,
-                    width: isDatePickerOpened ? 2 : 1,
+                        isDatePickerOpened ? CustomColor.primary : CustomColor.primary.withAlpha(88),
+                    width: isDatePickerOpened ? 2 : 0.8,
                   ),
                   borderRadius: BorderRadius.circular(Dimensions.radius),
                 ),
@@ -151,7 +151,7 @@ class _CustomDatePickerState extends State<CustomDatePicker>
                     color: widget.calendarIconColor ??
                         (isDatePickerOpened
                             ? CustomColor.primary
-                            : CustomColor.disableColor),
+                            : CustomColor.blackColor),
                     size: 20,
                   ),
                 ],

@@ -1,4 +1,3 @@
-// ignore_for_file: library_private_types_in_public_api
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -276,10 +275,11 @@ class _CustomDropDownState<T> extends State<CustomDropDown<T>>
             decoration: widget.decoration ??
                 BoxDecoration(
                   border: Border.all(
-                    color: isDropdownOpened ? CustomColor.primary : Colors.grey,
-                    width: isDropdownOpened ? 2 : 1,
+                    color: isDropdownOpened ? CustomColor.primary : CustomColor.primary.withAlpha(88),
+                    width: isDropdownOpened ? 2 : 0.8,
                   ),
                   borderRadius: BorderRadius.circular(Dimensions.radius),
+                  color: CustomColor.whiteColor
                 ),
             child: Padding(
               padding: widget.fieldPadding ??
@@ -307,13 +307,8 @@ class _CustomDropDownState<T> extends State<CustomDropDown<T>>
                               children: [
                                 TextWidget(
                                   widget.selectMethod.value,
-                                  typographyStyle: TypographyStyle.titleMedium,
-                                  style: CustomStyle.titleMedium.copyWith(
-                                    color: widget.labelColor ??
-                                        (isDropdownOpened
-                                            ? CustomColor.primary
-                                            : null),
-                                  ),
+                                  fontSize: Dimensions.labelSmall * 1.25,
+                                  fontWeight: FontWeight.w400,
                                 ),
                                 if (widget.subtitle != '')
                                   TextWidget(
@@ -330,12 +325,12 @@ class _CustomDropDownState<T> extends State<CustomDropDown<T>>
                   ),
                   Icon(
                     isDropdownOpened
-                        ? Icons.arrow_drop_up
-                        : Icons.arrow_drop_down,
+                        ? Icons.keyboard_arrow_up_outlined
+                        : Icons.keyboard_arrow_down_rounded,
                     color: widget.dropdownIconColor ??
                         (isDropdownOpened
-                            ? CustomColor.primary
-                            : CustomColor.disableColor),
+                            ? CustomColor.blackColor
+                            : CustomColor.blackColor),
                   ),
                 ],
               ),

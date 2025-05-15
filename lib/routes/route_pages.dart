@@ -4,8 +4,8 @@ class RoutePageList {
   static var list = [
     GetPage(
       name: Routes.ragistrationScreen,
-      page: () => const RagistrationScreen(),
-      binding: RagistrationBinding(),
+      page: () => RegistrationScreen(),
+      binding: RegistrationBinding(),
     ),
     
     GetPage(

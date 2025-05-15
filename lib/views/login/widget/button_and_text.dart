@@ -27,7 +27,9 @@ class ButtonAndText extends GetView<LoginController> {
             ),
             TextWidget(
               onTap: () {
-                Get.toNamed(Routes.registerScreen);
+                Get.toNamed(Routes.registerScreen,
+
+                );
               },
               padding: EdgeInsets.symmetric(vertical: Dimensions.verticalSize),
               Strings.deliveryMan,

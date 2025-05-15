@@ -1,6 +1,6 @@
 part of 'ragistration_screen.dart';
 
-class RagistrationTabletScreen extends GetView<RagistrationController> {
+class RagistrationTabletScreen extends GetView<RegistrationController> {
   const RagistrationTabletScreen({super.key});
 
   @override

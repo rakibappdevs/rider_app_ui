@@ -2,6 +2,7 @@ import 'package:get/get.dart';
 import 'package:ibanking/bindings/navigation_binding.dart';
 import 'package:ibanking/bindings/splash_binding.dart';
 import 'package:ibanking/views/navigation/screen/navigation_screen.dart';
+import 'package:ibanking/views/registration/screen/ragistration_screen.dart';
 import 'package:ibanking/views/splash/screen/splash_screen.dart';
 
 import '../bindings/cart_binding.dart';
@@ -15,7 +16,7 @@ import '../bindings/order_request_binding.dart';
 import '../bindings/otp_verification_binding.dart';
 import '../bindings/pc_builder_binding.dart';
 import '../bindings/profile_binding.dart';
-import '../bindings/ragistration_binding.dart';
+import '../bindings/registration_binding.dart';
 import '../bindings/register_binding.dart';
 import '../views/cart/screen/cart_screen.dart';
 import '../views/category/screen/category_screen.dart';
@@ -29,7 +30,6 @@ import '../views/order_request/screen/order_request_screen.dart';
 import '../views/otp_verification/screen/otp_verification_screen.dart';
 import '../views/pc_builder/screen/pc_builder_screen.dart';
 import '../views/profile/screen/profile_screen.dart';
-import '../views/ragistration/screen/ragistration_screen.dart';
 import '../views/register/screen/register_screen.dart';
 
 part '../routes/route_pages.dart';
@@ -56,5 +56,5 @@ class Routes {
   static const String registerScreen = '/registerScreen';
   static const String forgot_passwordScreen = '/forgot_passwordScreen';
   static const String otp_verificationScreen = '/otp_verificationScreen';
-  static const String ragistrationScreen = '/ragistrationScreen';
+  static const String ragistrationScreen = '/registrationScreen';
 }
