@@ -9,6 +9,7 @@ class Strings {
   static const String youCanResend = "appLYouCanResend";
   static const String resend = "appLResend";
   static const String error = "Error";
+  static const String otpVerification = "Otp Verification";
   static const String drivingLicense = "Driving License";
   static const String virtualCard = "appLVirtualCard";
   static const String history = "appLHistory";

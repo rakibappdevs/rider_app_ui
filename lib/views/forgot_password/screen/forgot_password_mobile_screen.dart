@@ -71,7 +71,9 @@ class ForgotPasswordMobileScreen extends GetView<ForgotPasswordController> {
               Sizes.height.betweenInputBox,
               PrimaryButton(
                 title: 'Next',
-                onPressed: () {},
+                onPressed: () {
+                  Get.toNamed(Routes.otp_verificationScreen);
+                },
               )
             ],
           ),

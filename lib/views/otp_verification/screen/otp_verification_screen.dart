@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:ibanking/routes/routes.dart';
+import 'package:pin_code_fields/pin_code_fields.dart';
 import '../../../base/utils/basic_import.dart';
 import '../controller/otp_verification_controller.dart';
 part 'otp_verification_tablet_screen.dart';
